@@ -1,0 +1,29 @@
+.promo-left {
+  background-image:url(../img/raspberries-banner.png);
+  background-repeat: no-repeat;
+}
+
+.promo-right {
+  background-image: url(../img/marshmallow-banner.png);
+  background-repeat: no-repeat;
+}
+
+.blog {
+  background-image: url(../img/ice-cream-in-cup.jpg);
+  background-repeat: no-repeat;
+}
+
+.delivery {
+  background-image: url(../img/wafer-cup-holder.jpg);
+  background-repeat: no-repeat;
+}
+
+.subscribe {
+  background-image: url(../img/postal-background.png);
+  background-repeat: repeat;
+}
+
+.advantage {
+  background-image: url(../img/wafer-bg.png);
+  background-repeat: repeat;
+}
