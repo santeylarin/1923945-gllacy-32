@@ -1,3 +1,137 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color:#2D3440;
+  background-color: #FEAFC3;
+}
+
+/*фон для читаемости текста*/
+.promo-left,
+.promo-right,
+.advantage,
+.blog,
+.subscribe,
+.order-delivery,
+.main-contacts {
+  box-shadow: inset 0 0 0 200vw rgba(255,255,255,0.7)
+}
+
+/*кнопки*/
+.button-send {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border-radius: 26px;
+}
+
+/*header index*/
+.page-header a {
+  color: #2D3440;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.navigation-item {
+  list-style: none;
+}
+
+.header-phone {
+  font-weight: 700;
+}
+
+.user-navigation-item {
+  list-style: none;
+}
+.user-navigation-link-login {
+  font-size: 14px;
+}
+
+/*Slider*/
+.slider-description-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-description-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-link{
+  text-decoration: none;
+}
+
+.slider-link-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  background: #FCFCFC;
+  border-radius: 26px;
+}
+
+/*баннеры*/
+.promo-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height:46px;
+  text-align: center;
+}
+
+.promo-banner {
+  background-color: #FF7799;
+}
+
+.promo-banner-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-offer-link-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  background: #FCFCFC;
+  border-radius: 26px;
+}
+
+.promo a {
+  color: #2D3440;
+  text-decoration: none;
+}
 .promo-left {
   background-image:url(../img/raspberries-banner.png);
   background-repeat: no-repeat;
@@ -8,22 +142,304 @@
   background-repeat: no-repeat;
 }
 
+/*популярные товары*/
+.popular-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height:46px;
+  text-align: center;
+}
+
+.popular-item {
+  background-color: #FCFCFC;
+}
+
+.popular-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.popular-item-description {
+  text-align: center;
+  color: #565C66;
+}
+
+.popular-item-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.popular-item a {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+/*приемущества*/
+.advantage {
+  background-image: url(../img/wafer-bg.png);
+  background-repeat: repeat;
+}
+
+.advantage-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height:46px;
+  text-align: center;
+}
+
+.advantage-description {
+  color: #565C66;
+}
+
+/*Блог*/
 .blog {
   background-image: url(../img/ice-cream-in-cup.jpg);
   background-repeat: no-repeat;
 }
-
-.delivery {
-  background-image: url(../img/wafer-cup-holder.jpg);
-  background-repeat: no-repeat;
+.blog-new {
+  line-height: 20px;
+  color:#565C66;
 }
 
+.blog-item-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*Подписка на рассылку*/
 .subscribe {
   background-image: url(../img/postal-background.png);
   background-repeat: repeat;
 }
 
-.advantage {
-  background-image: url(../img/wafer-bg.png);
-  background-repeat: repeat;
+.subscribe-description {
+  color: #565C66;
+}
+
+.subscribe-form input {
+  line-height: 48px;
+  background-color: #FFFFFF;
+}
+
+/*Оформление-заказа*/
+.order-delivery {
+  background-image: url(../img/ice-cream-and-leaf.jpg);
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height:46px;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.order-description {
+  color: #565C66;
+}
+
+.order-form input {
+  line-height: 48px;
+  background-color: #FFFFFF;
+}
+
+.order-form-date,
+.order-form-phone,
+.order-form-address {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/*контакная информация*/
+.main-contacts {
+  background-image: url(../img/wafer-cup-holder.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-contacts-address-header {
+  color: #565C66;
+}
+
+.main-contacts-address-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height:24px;
+}
+
+.main-contacts-phone-header {
+  color: #565C66;
+}
+
+.main-contacts-phone-number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height:24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.main-contacts-worktime {
+  font-weight: 400;
+  font-size: 14px;
+  line-height:20px;
+  color: #565C66;
+}
+
+.feedback-link{
+  font-weight: 700;
+  font-size: 16px;
+  line-height:20px;
+  text-align: center;
+  text-decoration: none;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border-radius: 26px;
+}
+
+/*footer*/
+.footer-info-list {
+  list-style: none;
+}
+
+.footer-info-item .footer-info-link-producer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height:20px;
+  color: #2D3440;
+}
+
+.footer-info-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height:20px;
+  text-decoration: none;
+  color: #2D3440;
+ }
+
+.copyright-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height:16px;
+}
+
+.copyright-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height:16px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*КАТАЛОГ*/
+/*header inner*/
+.inner-header a {
+  color: #2D3440;
+  line-height: 20px;
+}
+
+.user-navigation-link-cart {
+  font-size: 14px;
+}
+
+/*breadcrumps*/
+.breadcrumps-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height:20px;
+  color: #2D3440;
+}
+
+.inner-header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height:46px;
+}
+
+/*фильтр-сортировка*/
+.catalog-filter-title {
+  font-size: 14px;
+  line-height:20px;
+}
+
+.sorting {
+  font-size: 14px;
+  line-height:20px;
+}
+
+.catalog-filter-fat-item {
+  font-size: 14px;
+  line-height:20px;
+}
+
+.catalog-filter-filler-item {
+  font-size: 14px;
+  line-height:20px;
+}
+
+.button-filter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 20px;
+}
+
+/*товары*/
+.catalog-product-card {
+  background-color: #FCFCFC;
+}
+
+.catalog-product-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.catalog-product-description {
+  text-align: center;
+  color: #565C66;
+}
+
+.catalog-product-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-product-card a {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+/*pagination*/
+.show-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #FCFCFC;
+  border-radius: 26px;
+}
+
+.catalog-pagination-item {
+  list-style: none;
+}
+
+.catalog-pagination-item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #2D3440;
+}
+
+.catalog-pagination-link-current {
+  background: #FCFCFC;
 }
