@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -31,6 +39,9 @@ body {
   background-color: #FEAFC3;
 }
 
+.main-container {
+  flex-grow: 1;
+}
 /*фон для читаемости текста*/
 .promo-left,
 .promo-right,
@@ -53,10 +64,35 @@ body {
 }
 
 /*header index*/
+.header-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo {
+  /*margin-right: auto;*/
+  width: 137px;
+}
+
+.navigation {
+  width: 598px;
+  margin-left: 16px;
+}
+
+.user-navigation-container {
+  width: 419px;
+  margin-left: auto;
+}
 .page-header a {
   color: #2D3440;
   text-decoration: none;
   line-height: 20px;
+}
+
+.page-header ul {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-item {
@@ -75,6 +111,16 @@ body {
 }
 
 /*Slider*/
+.main-slider {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider-bottom {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .slider-description-title {
   font-weight: 900;
   font-size: 36px;
@@ -101,6 +147,13 @@ body {
 }
 
 /*баннеры*/
+.promo-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .promo-title {
   font-weight: 900;
   font-size: 32px;
@@ -110,6 +163,7 @@ body {
 
 .promo-banner {
   background-color: #FF7799;
+  width: 570px;
 }
 
 .promo-banner-title {
@@ -143,6 +197,10 @@ body {
 }
 
 /*популярные товары*/
+.popular {
+  width: 1170px;
+  margin: 0 auto;
+}
 .popular-title {
   font-weight: 900;
   font-size: 32px;
@@ -152,6 +210,7 @@ body {
 
 .popular-item {
   background-color: #FCFCFC;
+  width: 270px;
 }
 
 .popular-item-title {
@@ -181,6 +240,8 @@ body {
 .advantage {
   background-image: url(../img/wafer-bg.png);
   background-repeat: repeat;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .advantage-title {
@@ -198,6 +259,7 @@ body {
 .blog {
   background-image: url(../img/ice-cream-in-cup.jpg);
   background-repeat: no-repeat;
+  width: 570px;
 }
 .blog-new {
   line-height: 20px;
@@ -216,6 +278,7 @@ body {
 .subscribe {
   background-image: url(../img/postal-background.png);
   background-repeat: repeat;
+  width: 570px;
 }
 
 .subscribe-description {
@@ -226,10 +289,17 @@ body {
   line-height: 48px;
   background-color: #FFFFFF;
 }
-
+.blog-subscribe-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 /*Оформление-заказа*/
 .order-delivery {
   background-image: url(../img/ice-cream-and-leaf.jpg);
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .delivery-title {
@@ -262,6 +332,8 @@ body {
 .main-contacts {
   background-image: url(../img/wafer-cup-holder.jpg);
   background-repeat: no-repeat;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .main-contacts-address-header {
@@ -306,10 +378,44 @@ body {
 }
 
 /*footer*/
-.footer-info-list {
-  list-style: none;
+.footer-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
+.page-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social {
+  width: 104px;
+  margin-left: 4px;
+}
+
+.footer-info {
+  width: 356px;
+  margin-left: 299px;
+}
+
+.copyright {
+  width: 193px;
+  margin-right: 14px;
+
+}
+.footer-info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .footer-info-item .footer-info-link-producer {
   font-weight: 700;
   font-size: 14px;
