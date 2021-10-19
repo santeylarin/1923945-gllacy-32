@@ -35,14 +35,16 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color:#2D3440;
+  color: #2D3440;
   background-color: #FEAFC3;
 }
 
 .main-container {
   flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
 }
-/*фон для читаемости текста*/
+/*Временный фон для читаемости текста*/
 .promo-left,
 .promo-right,
 .advantage,
@@ -157,7 +159,7 @@ body {
 .promo-title {
   font-weight: 900;
   font-size: 32px;
-  line-height:46px;
+  line-height: 46px;
   text-align: center;
 }
 
@@ -187,7 +189,7 @@ body {
   text-decoration: none;
 }
 .promo-left {
-  background-image:url(../img/raspberries-banner.png);
+  background-image: url(../img/raspberries-banner.png);
   background-repeat: no-repeat;
 }
 
@@ -204,7 +206,7 @@ body {
 .popular-title {
   font-weight: 900;
   font-size: 32px;
-  line-height:46px;
+  line-height: 46px;
   text-align: center;
 }
 
@@ -238,8 +240,7 @@ body {
 
 /*приемущества*/
 .advantage {
-  background-image: url(../img/wafer-bg.png);
-  background-repeat: repeat;
+  background: #E0FFFF url("../img/wafer-bg.png") repeat;
   width: 1170px;
   margin: 0 auto;
 }
@@ -247,7 +248,7 @@ body {
 .advantage-title {
   font-weight: 900;
   font-size: 32px;
-  line-height:46px;
+  line-height: 46px;
   text-align: center;
 }
 
@@ -257,13 +258,12 @@ body {
 
 /*Блог*/
 .blog {
-  background-image: url(../img/ice-cream-in-cup.jpg);
-  background-repeat: no-repeat;
+  background: #FFFFFF url("../img/ice-cream-in-cup.jpg") no-repeat;
   width: 570px;
 }
 .blog-new {
   line-height: 20px;
-  color:#565C66;
+  color: #565C66;
 }
 
 .blog-item-link {
@@ -276,8 +276,7 @@ body {
 
 /*Подписка на рассылку*/
 .subscribe {
-  background-image: url(../img/postal-background.png);
-  background-repeat: repeat;
+  background: #ECECEC url("../img/postal-background.png") repeat;
   width: 570px;
 }
 
@@ -297,7 +296,7 @@ body {
 }
 /*Оформление-заказа*/
 .order-delivery {
-  background-image: url(../img/ice-cream-and-leaf.jpg);
+  background: #ECECEC url("../img/ice-cream-and-leaf.jpg") no-repeat;
   width: 1170px;
   margin: 0 auto;
 }
@@ -305,7 +304,7 @@ body {
 .delivery-title {
   font-weight: 900;
   font-size: 32px;
-  line-height:46px;
+  line-height: 46px;
 }
 
 .delivery-description {
@@ -330,8 +329,7 @@ body {
 
 /*контакная информация*/
 .main-contacts {
-  background-image: url(../img/wafer-cup-holder.jpg);
-  background-repeat: no-repeat;
+  background: #ECECEC url("../img/wafer-cup-holder.jpg") no-repeat;
   width: 1170px;
   margin: 0 auto;
 }
@@ -344,7 +342,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height:24px;
+  line-height: 24px;
 }
 
 .main-contacts-phone-header {
@@ -354,7 +352,7 @@ body {
 .main-contacts-phone-number {
   font-weight: 700;
   font-size: 20px;
-  line-height:24px;
+  line-height: 24px;
   text-decoration: none;
   color: #2D3440;
 }
@@ -362,14 +360,14 @@ body {
 .main-contacts-worktime {
   font-weight: 400;
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
   color: #565C66;
 }
 
 .feedback-link{
   font-weight: 700;
   font-size: 16px;
-  line-height:20px;
+  line-height: 20px;
   text-align: center;
   text-decoration: none;
   color: #FCFCFC;
@@ -419,14 +417,14 @@ body {
 .footer-info-item .footer-info-link-producer {
   font-weight: 700;
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
   color: #2D3440;
 }
 
 .footer-info-link {
   font-weight: 400;
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
   text-decoration: none;
   color: #2D3440;
  }
@@ -434,13 +432,13 @@ body {
 .copyright-text {
   font-weight: 400;
   font-size: 12px;
-  line-height:16px;
+  line-height: 16px;
 }
 
 .copyright-link {
   font-weight: 400;
   font-size: 12px;
-  line-height:16px;
+  line-height: 16px;
   color: #2D3440;
   text-decoration: none;
 }
@@ -460,35 +458,39 @@ body {
 .breadcrumps-link {
   font-weight: 700;
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
   color: #2D3440;
 }
 
 .inner-header-title {
   font-weight: 900;
   font-size: 32px;
-  line-height:46px;
+  line-height: 46px;
 }
 
 /*фильтр-сортировка*/
+
+.catalog-filter {
+  width: 807px;
+}
 .catalog-filter-title {
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
 }
 
 .sorting {
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
 }
 
 .catalog-filter-fat-item {
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
 }
 
 .catalog-filter-filler-item {
   font-size: 14px;
-  line-height:20px;
+  line-height: 20px;
 }
 
 .button-filter {
@@ -501,6 +503,7 @@ body {
 /*товары*/
 .catalog-product-card {
   background-color: #FCFCFC;
+  width: 270px;
 }
 
 .catalog-product-title {
@@ -536,6 +539,10 @@ body {
   border-radius: 26px;
 }
 
+.show-more-pagination {
+  width: 1170px;
+  margin: 0 auto;
+}
 .catalog-pagination-item {
   list-style: none;
 }
