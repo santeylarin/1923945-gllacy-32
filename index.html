@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <div class="header-container">
-      <a class="logo" href="https://htmlacademy.ru"><img class="logo" src="img/logo.svg" width="137" height="56" alt="Логотип магазина Глэйси."></a>
+      <a class="logo" href="https://htmlacademy.ru"><img class="logo-img" src="img/logo.svg" width="137" height="56" alt="Логотип магазина Глэйси."></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -27,13 +27,13 @@
       <div class="user-navigation">
         <ul class="user-navigation-list">
           <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="user-navigation-link user-navigation-link-search" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-link-login" href="#">Вход</a>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">Пусто<span class="visually-hidden">&nbsp;Корзина</span></a>
+            <a class="user-navigation-link user-navigation-link-cart" href="#">Пусто<span class="visually-hidden">&nbsp;Корзина</span></a>
           </li>
         </ul>
       </div>
@@ -41,10 +41,10 @@
       </div>
     </header>
     <main class="main-index main-container">
-      <h1 class="visually-hidden" hidden>Глэйси–магазин по продаже мороженого</h1>
+      <h1 class="visually-hidden">Глэйси–магазин по продаже мороженого</h1>
       <!--slider-->
       <section class="slider">
-        <h2 class="visually-hidden" hidden>Лучшие сорта мороженого с описанием и фото</h2>
+        <h2 class="visually-hidden">Лучшие сорта мороженого с описанием и фото</h2>
         <div class="main-slider">
           <h3 class="slider-description-title">Нежный пломбир с клубничным джемом</h3>
           <p class="slider-description-text">Натуральное мороженое из свежих сливок
@@ -181,17 +181,17 @@
       </section>
       <div class="blog-subscribe-container">
       <section class="blog">
-        <h2 class="blog-title"><span class="visually-hidden" hidden>Блог</span></h2>
+        <h2 class="blog-title"><span class="visually-hidden">Блог</span></h2>
         <p class="blog-new">Новое в нашем блоге</p>
         <a class="blog-item-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe"><span class="visually-hidden" hidden>Подписка на сладкую рассылку</span></h2>
+        <h2 class="subscribe"><span class="visually-hidden">Подписка на сладкую рассылку</span></h2>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="subscribe-description"><label for="e-mail">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label></p>
           <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com">
-          <button class="button button-send" type="submit">Отправить</button>
+          <button class="button button-send button-send-subscribe" type="submit">Отправить</button>
         </form>
       </section>
       </div>
@@ -202,14 +202,14 @@
           мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
       </section>
       <section class="order">
-        <h2 class="order-title"><span class="visually-hidden" hidden>Оформление заказа</span></h2>
+        <h2 class="order-title"><span class="visually-hidden">Оформление заказа</span></h2>
         <p class="order-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="order-form-date">
             <label for="order-form-date">
               Дата</label>
               <button class="info" type="button">
-                <span class="visually-hidden" hidden>Посмотреть дополнительную информацию</span>
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
               <input type="text" id="order-form-date" name="order-form-date" placeholder="01.04.2020">
           </p>
@@ -221,7 +221,7 @@
             <label for="order-form-address">
               Адрес</label>
             <button class="info" type="button">
-              <span class="visually-hidden" hidden>Посмотреть дополнительную информацию</span>
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
             </button>
             <input type="text" id="order-form-address" name="order-form-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
@@ -230,19 +230,21 @@
       </section>
       </div>
       <section class="main-contacts">
-        <h2 class="main-contacts-title" hidden>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contact-container">
         <p class="main-contacts-address-header">Адрес главного офиса и офлайн-магазина:</p>
-        <address class="main-contacts-address-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+        <address class="main-contacts-address-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</address>
         <p class="main-contacts-phone-header">Для заказов по телефону:</p>
         <a class="main-contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="main-contacts-worktime">(с 10 до 20 ежедневно)</p>
         <a class="feedback-link" href="#">Форма обратной связи</a>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="footer-container">
       <section class="footer-social">
-        <h2 class="visually-hidden" hidden>Мы в соцсетях</h2>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
@@ -256,7 +258,7 @@
         </ul>
       </section>
       <section class="footer-info">
-        <h2 class="visually-hidden" hidden>Дополнительная информация</h2>
+        <h2 class="visually-hidden">Дополнительная информация</h2>
         <ul class="footer-info-list">
           <li class="footer-info-item">
             <a class="footer-info-link footer-info-link-producer" href="#">Для поставщиков</a>
@@ -273,7 +275,7 @@
         </ul>
       </section>
       <section class="copyright">
-        <h2 class="copyright-title"><span class="visually-hidden" hidden>Сделано в .html academy</span></h2>
+        <h2 class="copyright-title"><span class="visually-hidden">Сделано в .html academy</span></h2>
         <a class="copyright-logo-link" href="https://htmlacademy.ru">
           <img class="copyright-logo" src="img/logo_htmlacademy.svg" width="93" height="27" alt="Логотип html academy"></a>
         <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a>&nbsp;&copy; 2021</p>

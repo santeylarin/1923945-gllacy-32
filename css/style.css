@@ -28,6 +28,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -37,6 +38,26 @@ body {
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
+}
+
+p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-container {
@@ -63,18 +84,26 @@ body {
   color: #FCFCFC;
   background-color: #FF2F64;
   border-radius: 26px;
+  display: inline-block;
+  width: 152px;
+  padding: 12px 32px;
 }
 
 /*header index*/
 .header-container {
   display: flex;
   width: 1170px;
-  margin: 0 auto;
+  margin: 24px auto;
+  align-items: center;
+  line-height: 20px;
 }
 
 .logo {
-  /*margin-right: auto;*/
   width: 137px;
+}
+
+.logo-img {
+  display: block;
 }
 
 .navigation {
@@ -85,11 +114,19 @@ body {
 .user-navigation-container {
   width: 419px;
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
+
+.navigation-link {
+  padding: 8px 8px;
+  margin: 0 8px;
+  display: block;
+}
+
 .page-header a {
   color: #2D3440;
   text-decoration: none;
-  line-height: 20px;
 }
 
 .page-header ul {
@@ -97,30 +134,67 @@ body {
   padding: 0;
 }
 
-.navigation-item {
-  list-style: none;
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .header-phone {
   font-weight: 700;
+  display: block;
+
+}
+.user-navigation {
+  flex-grow: 1;
 }
 
-.user-navigation-item {
-  list-style: none;
+.user-navigation-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-navigation-link {
+  display: block;
+  /*временные рамки*/
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 .user-navigation-link-login {
   font-size: 14px;
+  display: block;
+  padding: 6px 6px 6px 40px;
+  min-width: 62px;
 }
 
+.user-navigation-link-search {
+  padding: 9px 15px;
+  min-width: 18px;
+  min-height: 18px;
+}
 /*Slider*/
 .main-slider {
   width: 1170px;
   margin: 0 auto;
 }
 
+.slider-image-list {
+  list-style-type: none;
+}
+
 .slider-bottom {
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
+}
+
+.slider-pagination {
+  list-style-type: none;
+}
+
+.slider-social-list {
+  list-style-type: none;
 }
 
 .slider-description-title {
@@ -151,9 +225,10 @@ body {
 /*баннеры*/
 .promo-container {
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
   display: flex;
   justify-content: space-between;
+
 }
 
 .promo-title {
@@ -161,17 +236,36 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  width: 443px;
+  margin: 0 auto 56px auto;
+
 }
 
 .promo-banner {
   background-color: #FF7799;
   width: 570px;
+  border-radius: 16px;
+  min-height: 268px;
+  display: flex;
+  flex-direction: column;
+
+
 }
 
 .promo-banner-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.promo-banner-text {
+  margin: 0;
+  padding-top: 16px;
+  padding-left: 40px;
+  width: 321px;
 }
 
 .promo-offer-link-button {
@@ -182,6 +276,11 @@ body {
   color: #2D3440;
   background: #FCFCFC;
   border-radius: 26px;
+  margin-top: auto;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  width: 112px;
+  padding: 12px 32px;
 }
 
 .promo a {
@@ -189,12 +288,12 @@ body {
   text-decoration: none;
 }
 .promo-left {
-  background-image: url(../img/raspberries-banner.png);
+  background-image: url("../img/raspberries-banner.png");
   background-repeat: no-repeat;
 }
 
 .promo-right {
-  background-image: url(../img/marshmallow-banner.png);
+  background-image: url("../img/marshmallow-banner.png");
   background-repeat: no-repeat;
 }
 
@@ -203,11 +302,20 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
+
+.popular-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .popular-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  margin: 0 auto 56px auto;
+  width: 527px;
 }
 
 .popular-item {
@@ -242,18 +350,54 @@ body {
 .advantage {
   background: #E0FFFF url("../img/wafer-bg.png") repeat;
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
 }
 
 .advantage-title {
+  margin: 0 auto 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  width: 995px;
+  padding-top: 56px;
+}
+
+.advantage-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantage-description {
   color: #565C66;
+}
+
+.advantage-item {
+  width: 440px;
+  margin-left: 104px;
+  margin-right: 40px;
+}
+
+.advantage-item:nth-child(1) {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.advantage-item:nth-child(2) {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.advantage-item:nth-child(3) {
+  margin-bottom: 56px;
+}
+
+.advantage-item:nth-child(4) {
+  margin-bottom: 56px;
 }
 
 /*Блог*/
@@ -261,9 +405,12 @@ body {
   background: #FFFFFF url("../img/ice-cream-in-cup.jpg") no-repeat;
   width: 570px;
 }
+
 .blog-new {
   line-height: 20px;
   color: #565C66;
+  margin-top: 33px;
+  margin-left: 32px;
 }
 
 .blog-item-link {
@@ -272,6 +419,10 @@ body {
   line-height: 30px;
   color: #2D3440;
   text-decoration: none;
+  margin-top: 12px;
+  margin-left: 32px;
+  display: block;
+  width: 303px;
 }
 
 /*Подписка на рассылку*/
@@ -282,15 +433,30 @@ body {
 
 .subscribe-description {
   color: #565C66;
+  display: block;
+  width: 506px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 32px;
 }
 
 .subscribe-form input {
   line-height: 48px;
+  width: 332px;
   background-color: #FFFFFF;
+  margin-left: 32px;
+  margin-top: 42px;
+  margin-bottom: 32px;
 }
+
+.button-send-subscribe {
+  margin-left: 16px;
+
+}
+
 .blog-subscribe-container {
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 76px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -298,17 +464,25 @@ body {
 .order-delivery {
   background: #ECECEC url("../img/ice-cream-and-leaf.jpg") no-repeat;
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
 }
 
 .delivery-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  padding-top: 167px;
+  padding-left: 100px;
+  width: 356px;
+  display: block;
 }
 
 .delivery-description {
   color: #565C66;
+  display: block;
+  width: 371px;
+  margin-left: 100px;
+  margin-top: 24px;
 }
 
 .order-description {
@@ -334,8 +508,20 @@ body {
   margin: 0 auto;
 }
 
+.contact-container {
+  display: block;
+  width: 343px;
+  padding-top: 64px;
+  padding-left: 64px;
+  padding-bottom: 64px;
+}
+
 .main-contacts-address-header {
   color: #565C66;
+  display: block;
+  width: 179px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .main-contacts-address-text {
@@ -343,10 +529,20 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  display: block;
+  width: 263px;
+  margin-top: 12px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .main-contacts-phone-header {
   color: #565C66;
+  display: block;
+  width: 203px;
+  margin-top: 24px;
+  margin-left: 40px;
+  margin-right: 100px;
 }
 
 .main-contacts-phone-number {
@@ -355,6 +551,11 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #2D3440;
+  display: block;
+  width: 225px;
+  margin-top: 12px;
+  margin-left: 40px;
+  margin-right: 78px;
 }
 
 .main-contacts-worktime {
@@ -362,6 +563,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+  display: block;
+  width: 160px;
+  margin-left: 40px;
 }
 
 .feedback-link{
@@ -373,11 +577,17 @@ body {
   color: #FCFCFC;
   background-color: #FF2F64;
   border-radius: 26px;
+  width: 186px;
+  display: block;
+  padding: 13px 32px;
+  margin-top: 32px;
+  margin-left: 40px;
 }
 
 /*footer*/
 .footer-container {
   width: 1170px;
+  min-height: 153px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -391,6 +601,7 @@ body {
 .footer-social {
   width: 104px;
   margin-left: 4px;
+  margin-top: 48px;
 }
 
 .footer-info {
@@ -401,19 +612,37 @@ body {
 .copyright {
   width: 193px;
   margin-right: 14px;
-
+  margin-top: 48px;
 }
 .footer-info-list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin-top: 48px;
 }
 
 .footer-social-list {
   list-style: none;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
+
+.footer-social-item {
+  min-height: 24px;
+  min-width: 24px;
+  margin-right: 16px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  /*временные рамки*/
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .footer-info-item .footer-info-link-producer {
   font-weight: 700;
   font-size: 14px;
@@ -452,14 +681,26 @@ body {
 
 .user-navigation-link-cart {
   font-size: 14px;
+  display: block;
+  padding: 6px 6px 6px 40px;
+  min-height: 20px;
+  min-width: 59px;
 }
 
 /*breadcrumps*/
 .breadcrumps-link {
   font-weight: 700;
   font-size: 14px;
-  line-height: 20px;
   color: #2D3440;
+  margin-right: 28px;
+}
+
+.breadcrumps {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 32px;
+  line-height: 20px;
 }
 
 .inner-header-title {
@@ -473,6 +714,7 @@ body {
 .catalog-filter {
   width: 807px;
 }
+
 .catalog-filter-title {
   font-size: 14px;
   line-height: 20px;
@@ -488,9 +730,17 @@ body {
   line-height: 20px;
 }
 
+.catalog-filter-fat-list {
+  list-style-type: none;
+}
+
 .catalog-filter-filler-item {
   font-size: 14px;
   line-height: 20px;
+}
+
+.catalog-filter-filler-list {
+  list-style-type: none;
 }
 
 .button-filter {
@@ -537,22 +787,40 @@ body {
   text-align: center;
   background-color: #FCFCFC;
   border-radius: 26px;
+  width: 180px;
+  padding: 12px 32px;
+  border: none;
 }
 
 .show-more-pagination {
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
+  display: flex;
 }
+
+.show-more-button {
+  margin: 41px 0 41px 494px;
+}
+
 .catalog-pagination-item {
   list-style: none;
+}
+
+.catalog-pagination-list {
+  list-style-type: none;
+  display: flex;
+  align-self: center;
+  margin-left: auto;
 }
 
 .catalog-pagination-item a {
   text-decoration: none;
   font-size: 16px;
   color: #2D3440;
+  margin-left: 16px;
 }
 
 .catalog-pagination-link-current {
   background: #FCFCFC;
 }
+
