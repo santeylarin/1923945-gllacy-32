@@ -40,15 +40,6 @@ body {
   background-color: #FEAFC3;
 }
 
-p, ul, ol {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,7 +75,6 @@ h1, h2, h3 {
   color: #FCFCFC;
   background-color: #FF2F64;
   border-radius: 26px;
-  display: inline-block;
   width: 152px;
   padding: 12px 32px;
 }
@@ -354,7 +344,7 @@ h1, h2, h3 {
 }
 
 .advantage-title {
-  margin: 0 auto 0;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -456,7 +446,7 @@ h1, h2, h3 {
 
 .blog-subscribe-container {
   width: 1170px;
-  margin: 0 auto 76px auto;
+  margin: 0 auto 76px;
   display: flex;
   justify-content: space-between;
 }
