@@ -124,37 +124,49 @@
       <section class="popular">
         <h2 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ol class="popular-list">
-          <li class="popular-item">
+          <li class="popular-item-card">
             <a class="popular-item-cart-link" href="#">
-            <img class="popular-item-image" src="img/item-raspberries.jpg" width="168" height="168" alt="Мороженое малинка.">
-            <h3 class="popular-item-title">Малинка</h3>
-            <p class="popular-item-description">Сливочное мороженое с малиновым джемом</p></a>
+              <img class="popular-item-image" src="img/item-raspberries.jpg" width="168" height="168" alt="Мороженое малинка."></a>
+            <a class="popular-item-title-link" href="#">
+            <h3 class="popular-item-title">Малинка</h3></a>
+            <p class="popular-item-description">Сливочное мороженое с малиновым джемом</p>
+            <div class="popular-price-cart-container">
             <span class="popular-item-price">310 р./кг</span>
             <a class="popular-item-cart-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            </div>
           </li>
-          <li class="popular-item">
+          <li class="popular-item-card">
             <a class="popular-item-cart-link" href="#">
-            <img class="popular-item-image" src="img/item-pistachio.jpg" width="168" height="168" alt="Мороженое фисташка.">
-            <h3 class="popular-item-title">Фисташка</h3>
-            <p class="popular-item-description">Фисташковый пломбир с кусочками шоколада</p></a>
+            <img class="popular-item-image" src="img/item-pistachio.jpg" width="168" height="168" alt="Мороженое фисташка."></a>
+            <a class="popular-item-title-link" href="#">
+              <h3 class="popular-item-title">Фисташка</h3></a>
+            <p class="popular-item-description">Фисташковый пломбир с кусочками шоколада</p>
+            <div class="popular-price-cart-container">
             <span class="popular-item-price">340 р./кг</span>
             <a class="popular-item-cart-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            </div>
           </li>
-          <li class="popular-item">
+          <li class="popular-item-card">
             <a class="popular-item-cart-link" href="#">
-            <img class="popular-item-image" src="img/item-blueberry.jpg" width="168" height="168" alt="Мороженое черника.">
-            <h3 class="popular-item-title">Черника</h3>
-            <p class="popular-item-description">Крем-брюле с черничным джемом</p></a>
+            <img class="popular-item-image" src="img/item-blueberry.jpg" width="168" height="168" alt="Мороженое черника."></a>
+            <a class="popular-item-title-link" href="#">
+              <h3 class="popular-item-title">Черника</h3></a>
+            <p class="popular-item-description">Крем-брюле с черничным джемом</p>
+            <div class="popular-price-cart-container">
             <span class="popular-item-price">330 р./кг</span>
             <a class="popular-item-cart-button" href=""><span class="visually-hidden">Корзина</span></a>
+            </div>
           </li>
-          <li class="popular-item">
+          <li class="popular-item-card">
             <a class="popular-item-cart-link" href="#">
-            <img class="popular-item-image" src="img/item-bublegum.jpg" width="168" height="168" alt="Мороженое бабл-гам.">
-            <h3 class="popular-item-title">Бабл-гам</h3>
-            <p class="popular-item-description">Ванильный пломбир со сладкой посыпкой</p></a>
+            <img class="popular-item-image" src="img/item-bublegum.jpg" width="168" height="168" alt="Мороженое бабл-гам."></a>
+            <a class="popular-item-title-link" href="#">
+              <h3 class="popular-item-title">Бабл-гам</h3></a>
+            <p class="popular-item-description">Ванильный пломбир со сладкой посыпкой</p>
+            <div class="popular-price-cart-container">
             <span class="popular-item-price">320 р./кг</span>
             <a class="popular-item-cart-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            </div>
           </li>
         </ol>
       </section>
@@ -202,31 +214,35 @@
           мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
       </section>
       <section class="order">
+        <div class="form-container">
         <h2 class="visually-hidden">Оформление заказа</h2>
-        <p class="order-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+        <p class="order-description">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
         <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="order-form-date">
+          <p class="order-form-date order-form-field">
             <label for="order-form-date">
-              Дата</label>
+              Дата
               <button class="info" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
+            </label>
               <input type="text" id="order-form-date" name="order-form-date" placeholder="01.04.2020">
           </p>
-          <p class="order-form-phone"><label for="order-form-phone">
+          <p class="order-form-phone order-form-field"><label for="order-form-phone">
             Телефон</label>
             <input type="text" name="order-form-phone" id="order-form-phone" placeholder="+7 800 999-00-00">
           </p>
-          <p class="order-form-address">
+          <p class="order-form-address order-form-field">
             <label for="order-form-address">
-              Адрес</label>
+              Адрес
             <button class="info" type="button">
               <span class="visually-hidden">Посмотреть дополнительную информацию</span>
             </button>
+            </label>
             <input type="text" id="order-form-address" name="order-form-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
-          <button class="button button-send" type="submit">Отправить</button>
+          <button class="button button-send button-send-order" type="submit">Отправить</button>
         </form>
+        </div>
       </section>
       </div>
       <section class="main-contacts">
@@ -264,10 +280,10 @@
             <a class="footer-info-link footer-info-link-producer" href="#">Для поставщиков</a>
           </li>
           <li class="footer-info-item">
-            <a class="footer-info-link" href="#">О производстве</a>
+            <a class="footer-info-link" href="#">Наши документы</a>
           </li>
           <li class="footer-info-item">
-            <a class="footer-info-link" href="#">Наши документы</a>
+            <a class="footer-info-link" href="#">О производстве</a>
           </li>
           <li class="footer-info-item">
             <a class="footer-info-link" href="#">Экологические стандарты</a>

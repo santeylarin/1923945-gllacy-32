@@ -176,7 +176,7 @@ body {
 
 .slider-bottom {
   width: 1170px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 80px;
 }
 
 .slider-pagination {
@@ -215,7 +215,7 @@ body {
 /*баннеры*/
 .promo-container {
   width: 1170px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 80px;
   display: flex;
   justify-content: space-between;
 
@@ -227,7 +227,7 @@ body {
   line-height: 46px;
   text-align: center;
   width: 443px;
-  margin: 0 auto 56px auto;
+  margin: 0 auto 56px;
 
 }
 
@@ -258,6 +258,7 @@ body {
   width: 321px;
 }
 
+/*noinspection ALL*/
 .promo-offer-link-button {
   font-weight: 700;
   font-size: 16px;
@@ -287,51 +288,110 @@ body {
   background-repeat: no-repeat;
 }
 
-/*популярные товары*/
-.popular {
+/*item-list*/
+.popular,
+.catalog {
   width: 1170px;
   margin: 0 auto;
 }
 
 .popular-list {
   list-style-type: none;
-  margin: 0;
+  margin-bottom: 80px;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
 }
+
+.catalog-product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 40px;
+  margin-bottom: 16px;
+}
+
+/*item-cards*/
 
 .popular-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-  margin: 0 auto 56px auto;
+  margin: 0 auto 56px;
   width: 527px;
 }
 
-.popular-item {
+.popular-item-card,
+.catalog-product-card {
   background-color: #FCFCFC;
   width: 270px;
+  display: grid;
+  grid-template-columns: 40px 190px 40px;
+  grid-template-rows: 168px min-content min-content auto;
 }
 
-.popular-item-title {
+.popular-item-image {
+  object-fit: fill;
+}
+
+.popular-item-cart-link,
+.catalog-product-link{
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+/*.popular-item-image,
+ .popular-item-image {
+  display: block;
+}*/
+
+.popular-item-title-link,
+.catalog-product-title-link {
+  grid-column: 2 / 3;
+  margin-top: 16px;
+  margin-bottom: 8px;
+
+}
+
+.popular-item-description,
+.catalog-product-description {
+  grid-column: 2 / 3;
+  margin-bottom: 20px;
+}
+
+.popular-price-cart-container,
+.product-price-cart-container{
+  grid-column: 2 / 3;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.popular-item-title,
+.catalog-product-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
 }
 
-.popular-item-description {
+.popular-item-description,
+.catalog-product-description {
   text-align: center;
   color: #565C66;
 }
 
-.popular-item-price {
+.popular-item-price,
+.catalog-product-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
-.popular-item a {
+.popular-item a,
+.catalog-product-card a {
   text-decoration: none;
   color: #2D3440;
 }
@@ -340,7 +400,7 @@ body {
 .advantage {
   background: #E0FFFF url("../img/wafer-bg.png") repeat;
   width: 1170px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 80px;
 }
 
 .advantage-title {
@@ -454,7 +514,7 @@ body {
 .order-delivery {
   background: #ECECEC url("../img/ice-cream-and-leaf.jpg") no-repeat;
   width: 1170px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 80px;
 }
 
 .delivery-title {
@@ -477,11 +537,21 @@ body {
 
 .order-description {
   color: #565C66;
+  margin-left: 40px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.form-container {
+  height: 406px;
+  width: 500px;
 }
 
 .order-form input {
   line-height: 48px;
   background-color: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .order-form-date,
@@ -491,6 +561,32 @@ body {
   line-height: 20px;
 }
 
+.order-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.order-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form-address {
+  grid-column: 1 / -1;
+}
+
+.order-form-phone{
+  margin-left: 0;
+}
+
+.button-send-order {
+  grid-column: 1 / -1;
+ justify-self: center;
+  margin-top: 12px;
+  margin-bottom: 42px;
+}
 /*контакная информация*/
 .main-contacts {
   background: #ECECEC url("../img/wafer-cup-holder.jpg") no-repeat;
@@ -579,7 +675,6 @@ body {
   width: 1170px;
   min-height: 153px;
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -597,25 +692,32 @@ body {
 .footer-info {
   width: 356px;
   margin-left: 299px;
+  margin-top: 48px;
 }
 
 .copyright {
   width: 193px;
   margin-right: 14px;
   margin-top: 48px;
+  margin-left: auto;
 }
+
 .footer-info-list {
   list-style: none;
+  display: grid;
+  row-gap: 8px;
+  grid-template-columns: auto auto;
+  margin: 0;
   padding: 0;
-  margin-top: 48px;
+  line-height: 20px;
 }
 
 .footer-social-list {
+  margin: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 8px;
 }
 
 .footer-social-item {
@@ -636,17 +738,16 @@ body {
 .footer-info-item .footer-info-link-producer {
   font-weight: 700;
   font-size: 14px;
-  line-height: 20px;
   color: #2D3440;
 }
 
 .footer-info-link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   text-decoration: none;
   color: #2D3440;
- }
+  margin-left: 24px;
+}
 
 .copyright-text {
   font-weight: 400;
@@ -740,35 +841,6 @@ body {
   border-radius: 20px;
 }
 
-/*товары*/
-.catalog-product-card {
-  background-color: #FCFCFC;
-  width: 270px;
-}
-
-.catalog-product-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-}
-
-.catalog-product-description {
-  text-align: center;
-  color: #565C66;
-}
-
-.catalog-product-price {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.catalog-product-card a {
-  text-decoration: none;
-  color: #2D3440;
-}
-
 /*pagination*/
 .show-more {
   font-weight: 700;
@@ -784,7 +856,7 @@ body {
 
 .show-more-pagination {
   width: 1170px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 40px;
   display: flex;
 }
 
