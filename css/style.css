@@ -1164,6 +1164,19 @@ body {
   font-size: 14px;
   line-height: 20px;
   border-radius: 20px;
+  border: none;
+  padding: 8px 32px;
+  box-shadow: 0 0 0  2px #FCFCFC;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.button-filter:hover {
+  background: #FCFCFC;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+}
+
+.button-filter:focus {
+  box-shadow: 0 0 0  2px #2D3440;
 }
 
 /*pagination*/
@@ -1218,19 +1231,19 @@ body {
 .catalog-pagination-link-prev {
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
-  background-position: 0 -2px;
   transform: rotate(180deg);
   display: block;
   min-height: 17px;
   min-width: 17px;
   opacity: 0.2;
+  margin-top: 3px;
 }
 
 .catalog-pagination-link-next {
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
-  background-position: 0 3px;
   display: block;
   min-height: 17px;
   min-width: 17px;
+  margin-top: 3px;
 }
