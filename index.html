@@ -14,25 +14,23 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
-          <div class="catalog-drop-menu">
-            <ul class="catalog-drop-menu-list">
-              <li class="catalog-drop-menu-item">
-                <a class="catalog-drop-menu-link" href="#">Новинки</a>
-              </li>
-              <li class="catalog-drop-menu-item">
-                <a class="catalog-drop-menu-link" href="#">Сливочное</a>
-              </li>
-              <li class="catalog-drop-menu-item">
-                <a class="catalog-drop-menu-link" href="#">Щербеты</a>
-              </li>
-              <li class="catalog-drop-menu-item">
-                <a class="catalog-drop-menu-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="catalog-drop-menu-item">
-                <a class="catalog-drop-menu-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="catalog-drop-menu">
+            <li class="catalog-drop-menu-item">
+              <a class="catalog-drop-menu-link" href="#">Новинки</a>
+            </li>
+            <li class="catalog-drop-menu-item">
+              <a class="catalog-drop-menu-link" href="#">Сливочное</a>
+            </li>
+            <li class="catalog-drop-menu-item">
+              <a class="catalog-drop-menu-link" href="#">Щербеты</a>
+            </li>
+            <li class="catalog-drop-menu-item">
+              <a class="catalog-drop-menu-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="catalog-drop-menu-item">
+              <a class="catalog-drop-menu-link" href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -54,20 +52,18 @@
                 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z"/>
               </svg>
               <span class="visually-hidden">Поиск</span></a>
-            <section class="popover popover-search">
+            <div class="popover popover-search">
               <h2 class="visually-hidden">Поле ввода поисковой фразы</h2>
-              <div class="popover-search-content">
-                <form class="popover-search-form" method="get" action="https://echo.htmlacademy.ru">
-                  <p class="popover-search-field">
-                    <label class="visually-hidden" for="popover-search">Поиск</label>
-                    <input class="field popover-search-input" type="text" id="popover-search" name="popover-search"
-                           placeholder="Поиск по сайту">
-                    <button class="search-clear-button" type="reset"><span class="visually-hidden">Очистить форму</span>
-                    </button>
-                  </p>
-                </form>
-              </div>
-            </section>
+              <form class="popover-search-form" method="get" action="https://echo.htmlacademy.ru">
+                <p class="popover-search-field">
+                  <label class="visually-hidden" for="popover-search">Поиск</label>
+                  <input class="field popover-search-input" type="text" id="popover-search" name="popover-search"
+                         placeholder="Поиск по сайту">
+                  <button class="search-clear-button" type="reset"><span class="visually-hidden">Очистить форму</span>
+                  </button>
+                </p>
+              </form>
+            </div>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-link-login" href="#">
@@ -78,36 +74,34 @@
                  1 0 .95L6.6 11.85a.67.67 0 1 1-.95-.95l2.62-2.6H.87a.67.67 0 0 1 0-1.34h7.4L5.65 4.35a.67.67 0 0 1 0-.95Z"/>
               </svg>
               Вход</a>
-            <section class="popover popover-login">
-              <div class="popover-login-content">
-                <h3 class="popover-login-title">Личный кабинет</h3>
-                <form class="popover-login-form" method="post" action="https://echo.htmlacademy.ru">
-                  <p class="field-group">
-                    <label class="visually-hidden" for="popover-login">e-mail</label>
-                    <input class="field popover-login-input-email" type="email" id="popover-login" name="email"
-                           placeholder="email@example.com">
-                  </p>
-                  <p class="field-group">
-                    <label class="visually-hidden" for="popover-login-password"></label>
-                    <input class="field popover-login-input-password" type="password" id="popover-login-password"
-                           name="password" placeholder="******">
-                  </p>
-                  <div class="login-button-links-wrapper">
-                    <button class="button-send login-button" type="submit">Войти</button>
-                    <a class="login-link forgot-password-link" href="#">Забыли пароль?</a>
-                    <a class="login-link create-account-link" href="#">Регистрация</a>
-                  </div>
-                </form>
-              </div>
-            </section>
+            <div class="popover popover-login">
+              <h3 class="popover-login-title">Личный кабинет</h3>
+              <form class="popover-login-form" method="post" action="https://echo.htmlacademy.ru">
+                <p class="field-group">
+                  <label class="visually-hidden" for="popover-login">e-mail</label>
+                  <input class="field popover-login-input-email" type="email" id="popover-login" name="email"
+                         placeholder="email@example.com">
+                </p>
+                <p class="field-group">
+                  <label class="visually-hidden" for="popover-login-password"></label>
+                  <input class="field popover-login-input-password" type="password" id="popover-login-password"
+                         name="password" placeholder="******">
+                </p>
+                <div class="login-button-links-wrapper">
+                  <button class="button-send login-button" type="submit">Войти</button>
+                  <a class="login-link forgot-password-link" href="#">Забыли пароль?</a>
+                  <a class="login-link create-account-link" href="#">Регистрация</a>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="user-navigation-item">
             <a class="user-navigation-link user-navigation-link-cart icon-cart-empty" href="#">
               Пусто
               <span class="visually-hidden">Корзина</span></a>
-            <section class="popover-empty-cart">
+            <div class="popover-empty-cart">
               <h3 class="empty-cart-title">Ваша корзина<br> пока пуста</h3>
-            </section>
+            </div>
           </li>
         </ul>
       </div>
@@ -479,20 +473,19 @@
         </li>
       </ul>
     </section>
-    <section class="copyright">
-      <h2 class="visually-hidden">Сделано в .html academy</h2>
+    <div class="copyright">
       <a class="copyright-logo-link" href="https://htmlacademy.ru">
         <img class="copyright-logo" src="img/logo_htmlacademy.svg" width="93" height="27"
              alt="Логотип html academy"></a>
       <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a>&nbsp;&copy;
         2021</p>
-    </section>
+    </div>
   </div>
 </footer>
 <div class="modal-feedback-container modal-feedback-close">
   <div class="modal modal-feedback">
     <button class="modal-feedback-close-button" type="button">
-      <span class="visually-hidden">Закрыть</span>
+      <span class="visually-hidden">Закрыть окно</span>
     </button>
     <section class="modal-feedback-content">
       <h3 class="modal-feedback-title">Мы обязательно ответим вам!</h3>
