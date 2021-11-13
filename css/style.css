@@ -200,6 +200,16 @@ img {
   padding: 8px 16px;
   display: block;
   color: #2D3440;
+  position: relative;
+}
+
+.navigation-link::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
 }
 
 .navigation-link:hover {
@@ -339,10 +349,31 @@ img {
   display: block;
   color: #2D3440;
   text-decoration: none;
+  position: relative;
+}
+
+.user-navigation-link::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }
 
 .user-navigation-item {
   position: relative;
+}
+
+.user-navigation-link.user-navigation-link-search::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 45px;
+  position: absolute;
+  bottom: -8px;
+  left: -15px;
 }
 
 .user-navigation-link-cart,
@@ -1212,28 +1243,28 @@ img {
 }
 
 .advantage-item:nth-child(1)::before {
-  content: url("../img/ico-icecream.png");
+  content: url("../img/ico-icecream.svg");
   position: absolute;
   top: 0;
   left: -64px;
 }
 
 .advantage-item:nth-child(2)::before {
-  content: url("../img/ico-cow.png");
+  content: url("../img/ico-cow.svg");
   position: absolute;
   top: 0;
   left: -63px;
 }
 
 .advantage-item:nth-child(3)::before {
-  content: url("../img/ico-leaf.png");
+  content: url("../img/ico-leaf.svg");
   position: absolute;
   top: 0;
   left: -64px;
 }
 
 .advantage-item:nth-child(4)::before {
-  content: url("../img/ico-thermometer.png");
+  content: url("../img/ico-thermometer.svg");
   position: absolute;
   top: 0;
   left: -64px;
@@ -2179,3 +2210,5 @@ img {
   margin-bottom: -4px;
   padding: 3px 3px;
 }
+
+
