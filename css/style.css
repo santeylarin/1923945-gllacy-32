@@ -86,7 +86,7 @@ img {
   color: #FCFCFC;
   background-color: #FF2F64;
   border-radius: 26px;
-  padding: 14px 34px;
+  padding: 16px 36px;
   border: none;
   box-shadow: inset 0 0 0 4px rgba(252, 252, 252, 0.4),
   0 4px 12px rgba(45, 52, 64, 0.1);
@@ -583,33 +583,41 @@ img {
   box-sizing: border-box;
 }
 
+.popover-login-input-password {
+  padding-left: 11px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
 .login-button-links-wrapper {
   display: grid;
   grid-template-columns: min-content auto;
   grid-template-rows: auto auto;
-  column-gap: 20px;
-  margin-top: 31px;
+  column-gap: 19px;
+  margin-top: 28px;
   margin-bottom: 20px;
-}
-
-.forgot-password-link,
-.create-account-link {
-  color: #2D3440;
-  text-decoration: none;
-  letter-spacing: -1px;
 }
 
 .login-link {
   position: relative;
   text-decoration: underline;
   text-underline-offset: 3px;
-  margin-top: 1px;
-  line-height: 18px;
+  line-height: 20px;
+  color: #2D3440;
+  font-size: 14px;
+}
+
+.forgot-password-link {
+  margin-top: 4px;
+}
+
+.create-account-link {
+  margin-top: 0;
 }
 
 .login-button {
   grid-row: 1 / 3;
-  margin-left: -2px;
+  margin-left: -4px;
 }
 
 .user-navigation-link-login:hover ~ .popover-login,
@@ -1337,7 +1345,7 @@ img {
 }
 
 .subscribe-description {
-  padding: 26px 26px 42px;
+  padding: 26px 26px 40px;
   margin: 0;
   color: #565C66;
 }
@@ -1346,16 +1354,17 @@ img {
   display: flex;
   justify-content: space-between;
   margin-left: 26px;
-  padding-bottom: 26px;
-  margin-right: 23px;
+  padding-bottom: 24px;
+  margin-right: 20px;
 }
 
 .button-send-subscribe {
-  margin-left: 23px;
+  margin-left: 21px;
 }
 
 .subscribe-form input {
   flex-grow: 1;
+  margin: auto 0;
 }
 
 .blog-subscribe-container {
@@ -1410,7 +1419,7 @@ img {
 
 .order-description {
   color: #565C66;
-  margin: 40px 80px 15px 40px;
+  margin: 40px 80px 16px 40px;
   display: inline-block;
   width: 380px;
 }
@@ -1429,7 +1438,7 @@ img {
 
 .order-form-address {
   grid-column: 1 / -1;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .order-form-phone {
@@ -1450,23 +1459,24 @@ img {
   width: 14px;
   height: 14px;
   padding: 0;
-  margin-top: 4px;
-  margin-left: 4px;
+  margin-top: 3px;
+  margin-left: 5px;
   position: absolute;
   cursor: pointer;
 }
 
 .form-label,
 .order-form-phone-label {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   font-weight: 700;
+  line-height: 20px;
 }
 
 .button-send-order {
   grid-column: 1 / -1;
   justify-self: center;
-  margin-top: 15px;
-  margin-bottom: 39px;
+  margin-top: 12px;
+  margin-bottom: 38px;
 }
 
 /*main-contacts*/
@@ -1485,7 +1495,7 @@ img {
   width: 343px;
   margin-left: 64px;
   background-color: #FCFCFC;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   padding-top: 40px;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
@@ -1540,14 +1550,13 @@ img {
   margin-left: 40px;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .feedback-link {
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 36px;
   display: inline-block;
-  margin-bottom: -1px;
 }
 
 /*modal-feedback*/
@@ -1622,7 +1631,7 @@ img {
 }
 
 .modal-feedback-form .field-group:last-of-type {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .modal-feedback-input {
@@ -1636,14 +1645,13 @@ img {
   resize: none;
 }
 
-
 .modal-feedback-input::placeholder {
   color: #B9B9B9;
 }
 
 .modal-feedback-button {
   align-self: flex-end;
-  margin-right: -3px;
+  margin-right: -6px;
 }
 
 /*footer*/
@@ -2121,6 +2129,7 @@ img {
 }
 
 .button-filter {
+  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -2130,7 +2139,7 @@ img {
   box-shadow: 0 0 0 2px #FCFCFC;
   background: rgba(252, 252, 252, 0.3);
   margin-top: 28px;
-  margin-left: 3px;
+  margin-left: 2px;
   cursor: pointer;
 }
 
@@ -2162,12 +2171,12 @@ img {
 
 .main-button.show-more-button {
   margin: 41px 0 41px 493px;
-  padding: 12px 37px;
+  padding: 12px 33px;
 }
 
 .catalog-pagination-item {
   list-style: none;
-  margin: 0;
+  margin-left: 1px;
   padding: 0;
 }
 
@@ -2176,7 +2185,11 @@ img {
 }
 
 .catalog-pagination-list li:last-child {
-  margin-left: 10px;
+  margin-left: 15px;
+}
+
+.catalog-pagination-list li:nth-child(3) {
+  margin-left: 0;
 }
 
 .catalog-pagination-list {
@@ -2184,6 +2197,7 @@ img {
   display: flex;
   align-self: center;
   margin-left: auto;
+  margin-top: 17px;
 }
 
 .catalog-pagination-item a {
@@ -2194,6 +2208,7 @@ img {
 
 .catalog-pagination-link {
   padding: 2px 8px;
+  line-height: 20px;
 }
 
 .catalog-pagination-link-current {
@@ -2231,7 +2246,7 @@ img {
   opacity: 0.9;
   margin-top: 0;
   margin-bottom: -4px;
-  padding: 3px 3px;
+  padding: 3px 0px;
 }
 
 
