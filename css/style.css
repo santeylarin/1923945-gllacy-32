@@ -37,8 +37,20 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
-  background-color: #FEAFC3;
   min-width: 1366px;
+}
+
+.body-active-slide-1,
+.body-catalog {
+  background-color: #FEAFC3;
+}
+
+.body-active-slide-2 {
+  background-color: #69A9FF;
+}
+
+.body-active-slide-3 {
+  background-color: #FCC850;
 }
 
 img {
@@ -65,6 +77,9 @@ img {
 
 /*additional-button*/
 .button-send {
+  text-align: center;
+  font-family: inherit;
+  font-style: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -92,6 +107,7 @@ img {
 
 /*main-button*/
 .main-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -784,6 +800,14 @@ img {
   position: relative;
 }
 
+.active-slide {
+  display: block;
+}
+
+.hide-slide {
+  display: none;
+}
+
 .slider {
   position: relative;
 }
@@ -832,8 +856,7 @@ img {
   margin-top: 8px
 }
 
-
-.slider-description-container {
+.slider-description {
   padding-top: 136px;
   padding-left: 70px;
   width: 470px;
@@ -1794,7 +1817,7 @@ img {
 
 .breadcrumps-item:not(:last-of-type)::after {
   content: "";
-  background-image: url("../img/double_arrows.svg");
+  background-image: url("../img/double-arrows.svg");
   background-repeat: no-repeat;
   display: block;
   position: absolute;
@@ -1896,6 +1919,7 @@ img {
   border: none;
 }
 
+/*noinspection CssInvalidPropertyValue*/
 .range-input {
   appearance: textfield;
 }
