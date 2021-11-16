@@ -59,7 +59,7 @@
               <form class="popover-search-form" method="get" action="https://echo.htmlacademy.ru">
                 <p class="popover-search-field">
                   <label class="visually-hidden" for="popover-search">Поиск</label>
-                  <input class="field popover-search-input" type="text" id="popover-search" name="popover-search" placeholder="Поиск по сайту">
+                  <input class="field popover-search-input" type="text" id="popover-search" name="popover-search" placeholder="Поиск по сайту" required>
                   <button class="search-clear-button" type="reset"><span class="visually-hidden">Очистить форму</span>
                   </button>
                 </p>
@@ -80,11 +80,11 @@
               <form class="popover-login-form" method="post" action="https://echo.htmlacademy.ru">
                 <p class="field-group">
                   <label class="visually-hidden" for="popover-login">e-mail</label>
-                  <input class="field popover-login-input-email" type="email" id="popover-login" name="email" placeholder="email@example.com">
+                  <input class="field popover-login-input-email" type="email" id="popover-login" name="email" placeholder="email@example.com" required>
                 </p>
                 <p class="field-group">
                   <label class="visually-hidden" for="popover-login-password"></label>
-                  <input class="field popover-login-input-password" type="password" id="popover-login-password" name="password" placeholder="******">
+                  <input class="field popover-login-input-password" type="password" id="popover-login-password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                 </p>
                 <div class="login-button-links-wrapper">
                   <button class="button-send login-button" type="submit">Войти</button>
@@ -166,10 +166,10 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена:
               <label class="catalog-filter-label">
-                <input class="range-input" type="number" value="100" name="minimum-price" min="100" max="500">₽
+                <input class="range-input" type="number" value="100" name="minimum-price" min="100" max="500" required>₽
               </label><span class="dash">&ndash;</span>
               <label class="catalog-filter-label">
-                <input class="range-input" type="number" value="500" name="maximum-price" min="100" max="500">₽
+                <input class="range-input" type="number" value="500" name="maximum-price" min="100" max="500" required>₽
               </label>
             </legend>
             <div class="range">
