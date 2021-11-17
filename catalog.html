@@ -80,7 +80,7 @@
               <h2 class="popover-login-title">Личный кабинет</h2>
               <form class="popover-login-form" method="post" action="https://echo.htmlacademy.ru">
                 <p class="field-group">
-                  <label class="visually-hidden" for="popover-login">e-mail.</label>
+                  <label class="visually-hidden" for="popover-login">Логин.</label>
                   <input class="field popover-login-input-email" type="email" id="popover-login" name="email" placeholder="email@example.com" required>
                 </p>
                 <p class="field-group">
@@ -166,10 +166,10 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена:
-              <label class="catalog-filter-label"><span class="visually-hidden">Введите минимальную стоимость от 100 до 500 рублей.</span>
+              <label class="catalog-filter-label"><span class="visually-hidden">Ввод минимальной стоимости от 100 до 500 рублей.</span>
                 <input class="range-input" type="number" value="100" name="minimum-price" min="100" max="500" required>₽
               </label><span class="dash">&ndash;</span>
-              <label class="catalog-filter-label"><span class="visually-hidden">Введите максимальную стоимость от 100 до 500 рублей.</span>
+              <label class="catalog-filter-label"><span class="visually-hidden">Ввод максимальной стоимости от 100 до 500 рублей.</span>
                 <input class="range-input" type="number" value="500" name="maximum-price" min="100" max="500" required>₽
               </label>
             </legend>
@@ -188,7 +188,7 @@
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-fat-list">
               <li class="catalog-filter-fat-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с жирностью 0%.</span>
                   <input class="catalog-filter-input-radio visually-hidden" type="radio" name="fat" value="0%">
                   <svg class="radio-off radio" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z"/>
@@ -200,7 +200,7 @@
                 </label>
               </li>
               <li class="catalog-filter-fat-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с жирностью до 10%.</span>
                   <input class="catalog-filter-input-radio visually-hidden" type="radio" name="fat" value="before-10%" checked>
                   <svg class="radio-off radio" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z"/>
@@ -212,7 +212,7 @@
                 </label>
               </li>
               <li class="catalog-filter-fat-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с жирностью до 30%.</span>
                   <input class="catalog-filter-input-radio visually-hidden" type="radio" name="fat" value="before-30%">
                   <svg class="radio-off radio" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z"/>
@@ -224,7 +224,7 @@
                 </label>
               </li>
               <li class="catalog-filter-fat-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с жирностью выше 30%.</span>
                   <input class="catalog-filter-input-radio visually-hidden" type="radio" name="fat" value="over-30%">
                   <svg class="radio-off radio" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z"/>
@@ -243,7 +243,7 @@
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-filler-list">
               <li class="catalog-filter-filler-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с наполнителем из шоколада.</span>
                   <input class="catalog-filter-input-checkbox visually-hidden" type="checkbox" name="chocolate" checked>
                   <svg class="check check-on" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
@@ -262,7 +262,7 @@
                 </label>
               </li>
               <li class="catalog-filter-filler-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с сахарной посыпкой.</span>
                   <input class="catalog-filter-input-checkbox visually-hidden" type="checkbox" name="sugar" checked>
                   <svg class="check check-on" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
@@ -281,7 +281,7 @@
                 </label>
               </li>
               <li class="catalog-filter-filler-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с фруктами.</span>
                   <input class="catalog-filter-input-checkbox visually-hidden" type="checkbox" name="fruits">
                   <svg class="check check-on" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
@@ -300,7 +300,7 @@
                 </label>
               </li>
               <li class="catalog-filter-filler-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с добавлением сиропа.</span>
                   <input class="catalog-filter-input-checkbox visually-hidden" type="checkbox" name="syrups">
                   <svg class="check check-on" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
@@ -319,7 +319,7 @@
                 </label>
               </li>
               <li class="catalog-filter-filler-item">
-                <label class="catalog-filter-label">
+                <label class="catalog-filter-label"><span class="visually-hidden">Мороженное с джемом.</span>
                   <input class="catalog-filter-input-checkbox visually-hidden" type="checkbox" name="jams">
                   <svg class="check check-on" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z"/>
