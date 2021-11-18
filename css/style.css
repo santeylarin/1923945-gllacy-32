@@ -1379,7 +1379,6 @@ img {
 /*order-delivery*/
 .order-delivery {
   background: #ECECEC url("../img/ice-cream-and-leaf.jpg") no-repeat;
-
   margin-bottom: 80px;
   border-radius: 16px;
   display: flex;
@@ -1417,7 +1416,6 @@ img {
   margin-bottom: 64px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
-
 
 .order-description {
   color: #565C66;
@@ -1533,7 +1531,6 @@ img {
   border-radius: 16px;
   padding-top: 64px;
   padding-bottom: 64px;
-
 }
 
 .contact-container {
@@ -1583,7 +1580,6 @@ img {
   display: block;
   width: 225px;
   margin-left: 40px;
-
 }
 
 .main-contacts-worktime {
@@ -1968,7 +1964,6 @@ img {
 .range-input {
   width: 30px;
   padding: 0 2px 0 1px;
-
   font: inherit;
   text-align: center;
   background-color: transparent;
